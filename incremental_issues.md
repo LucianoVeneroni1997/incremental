@@ -1,3 +1,5 @@
+-- To solve the issue, I proposed validating unique_key columns for NULL values, adding configuration options to handle them (e.g., skipping rows or replacing NULL), and ensuring meaningful error messages are provided. These changes enhance data integrity and make the incremental process more reliable.
+
 {{ config(
     materialized='incremental',
     unique_key='unique_id'
